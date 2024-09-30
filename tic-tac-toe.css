@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: wheat;
+}
+
+
+/* .head{
+    background-color:aqua;
+    color:black;
+    font-size: 45px;
+    text-align: center;
+    height: 60px;
+    animation-name:"myanime";
+  animation-duration:infinite;
+  animation-timing-function:ease-in;
+  animation-delay: 1s;
+} */
+
+
+.container{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+.box{
+    height: 300px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    border:none;
+    border-radius: 10px;
+    font-size: 35px;
+    color:darkgreen;
+    transform: 90deg;
+    animation: gamebtns 2s ease-in-out 0s infinite normal; 
+
+}
+
+.btn:hover{
+   opacity: 0.6;
+   cursor: pointer;
+   font-size: 80px;
+   background-color: greenyellow;
+}
+.game-end{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 300px;
+  gap: 80px;
+  top: 200px;
+}
+.head{
+    background-color:aqua;
+    color:white;
+    font-size: 45px;
+    text-align: center;
+    height: 60px;
+    animation: heading 2s ease-in-out 0s infinite normal; 
+
+} 
+.new{
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    animation: newgame 2s ease-in-out 0s infinite normal; 
+}
+.new:active{
+    background-color: orange;
+    color: black;
+}
+
+.reset{
+    border-radius: 8px;
+    width: 80px;
+    font-size: 15px;
+    height: 30px;
+    text-align: center;
+    background-color:tomato;
+    animation: newgame 3s ease-in-out 0s infinite normal; 
+    color: white;
+}
+.reset:active{
+    color: black;
+}
+
+@keyframes newgame {
+   0%{background-color: tomato;}
+   50%{background-color: brown;}
+   100%{background-color: violet;}
+   
+};
+
+
+@keyframes gamebtns {
+    0%{background-color: tomato;}
+    50%{background-color: brown;}
+    100%{background-color: violet;}
+}
+
+@keyframes heading {
+    0%{background-color: aqua;font-size: 30px;}
+    50%{background-color: pink;font-size: 40px;}
+    100%{background-color:navy;font-size: 50px}    
+ };
